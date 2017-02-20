@@ -4,5 +4,24 @@
   "description": "Universal Router in the backend with Koa2",
   "main": "dist/start.js",
   "author": "Michele Ursino",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node dist/start.js"
+  },
+  "keywords": [
+    "koa",
+    "koa2",
+    "typescript",
+    "universal-router"
+  ],
+  "dependencies": {
+    "koa": "next",
+    "universal-router": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.37",
+    "@types/universal-router": "^0.0.2",
+    "typescript": "^2.1.6"
+  }
 }
