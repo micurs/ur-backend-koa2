@@ -1,0 +1,8 @@
+{
+  "name": "ur-backend-koa2",
+  "version": "0.0.1",
+  "description": "Universal Router in the backend with Koa2",
+  "main": "dist/start.js",
+  "author": "Michele Ursino",
+  "license": "MIT"
+}
