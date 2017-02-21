@@ -17,6 +17,9 @@
   ],
   "dependencies": {
     "koa": "next",
+    "koa-bodyparser": "^2.3.0",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^1.1.3",
     "universal-router": "^2.0.0"
   },
   "devDependencies": {
