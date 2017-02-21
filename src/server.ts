@@ -60,6 +60,11 @@ export function start( port: number ) {
     .use( convert( json({ pretty: false, param: 'pretty' }) ))
     .use( universalRouter(myroutes1) )
     .use( universalRouter(myroutes2) )
+    .use( ( ctx ) => {
+      ctx.status = 404;
+      ctx.body = `Not found`;
+      console.error(`${ctx.status} - ${ctx.body}`);
+    })
     .on ('error', (err,ctx) => {
       console.error(`Koa2 Server Error: ${err.message}`);
       ctx.body = err.message;
