@@ -6,7 +6,7 @@
   "author": "Michele Ursino",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p .",
+    "build": "echo TypeScript && tsc --version && tsc -p . && echo Compile done",
     "start": "node dist/start.js"
   },
   "keywords": [
